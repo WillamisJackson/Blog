@@ -1,0 +1,40 @@
+body {
+    background: var(--linear);
+}
+
+h1 {
+    text-align: center;
+}
+
+#header {
+    min-height: 0;
+}
+
+#main :where(.form, .input-search) {
+    display: grid;
+    gap: 7px;
+    margin: 0 150px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.input-search :where(input, textarea) {
+    padding: 20px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid var(--white);
+}

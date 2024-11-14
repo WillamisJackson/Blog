@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574ae8;
+    --white: #fff;
+    --title: #313131;
+    --text: #646464;
+    --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    font-size: 40px;
+    color: #02466e;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.backToTop.show {
+    visibility: visible;
+    bottom: 15px;
+    transform: translateY(0);
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.input-search i {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.input-search :where(input, textarea) {
+    width: 100%;
+    padding: 20px 0 20px 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+
+.input-search input::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+#header, 
+#footer {
+    background: var(--linear);
+    padding: 25px 250px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#header {
+    min-height: 250px;
+}
+
+#header .menu h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
