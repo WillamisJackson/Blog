@@ -7,7 +7,7 @@
     if ($sql->rowCount() > 0) {
         $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
     } else {
-        // Redireciona para a página de cadastro se não houver notícias
+        
         header("Location: cadastrar.php");
         exit;
     }

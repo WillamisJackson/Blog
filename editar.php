@@ -1,7 +1,7 @@
 <?php
     require "conexao.php";
 
-    // Obtém o ID da notícia a ser editada
+    
     $id = $_GET['id'] ?? null;
 
     if ($id) {
@@ -10,7 +10,7 @@
         $notice = $sql->fetch(PDO::FETCH_ASSOC);
     }
 
-    // Verifique se a notícia existe
+    
     if ($notice):
 ?>
 <!DOCTYPE html>
