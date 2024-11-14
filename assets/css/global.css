@@ -106,3 +106,10 @@ body {
     color: var(--white);
     border-bottom: 1px solid var(--white);
 }
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os ícones */
+    gap: 5px; /* Espaçamento entre os ícones */
+}
