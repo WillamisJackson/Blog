@@ -33,14 +33,17 @@ body {
 }
 
 .backToTop {
+    display: none;
     position: fixed;
-    bottom: 0;
-    right: 30px;
-    font-size: 40px;
-    color: #02466e;
-    visibility: hidden;
-    transform: translateY(100%);
-    transition: 0.3s;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
 }
 
 .backToTop.show {
